@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="night">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXAM</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans">
+
+
+  <div class="flex items-center justify-center" id="loading">
+    <span class="loading loading-spinner loading-lg" id="loading"></span>
+  </div>
+
+  <div>
+    <select name="" id="filterBy" class="select select-primary border mt-5 ml-10">
+      <option value="cheap">Подешевле</option>
+      <option value="expensive">Подороже</option>
+    </select>
+
+    <div class="p-6 text-center">
+      <input id="searchInput" type="text" placeholder="Search..."
+        class="w-1/2 p-2 border border-cyan-400 shadow-lg shadow-cyan-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 bg-base-300">
+    </div>
+  </div>
+
+  <div id="cards" class="wrapper flex flex-wrap gap-6 justify-center p-6"></div>
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
